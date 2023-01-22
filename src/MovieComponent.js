@@ -1,4 +1,5 @@
 import './MovieComponent.css';
+import MovieList from './MovieList.js';
 
 //the movie data is not available outside the component
 // thus it is a state!
@@ -17,11 +18,7 @@ const MovieComponent = () => {
             <h2 className="list-of-movies">List of Movies</h2>
             <ul className= "ul-of-movies">
                 {movieData.map((movie) => (
-                    <li className="each-movie" key={movie.id}>
-                        <h3>{movie.title}</h3>
-                        <h4>Rated {movie.rating}</h4>
-                        <img src={movie.image} alt={movie.title} className="movie-poster" />
-                    </li>
+                    <MovieList key={movie.id} movie={movie}/>
                 ))}
             </ul>
         </div>

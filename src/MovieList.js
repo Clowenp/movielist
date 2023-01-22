@@ -1,3 +1,5 @@
+import './MovieComponent.css';
+
 const MovieList = ({movie}) => {
     return(
         <li className="each-movie" key={movie.id}>

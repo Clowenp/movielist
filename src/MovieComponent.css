@@ -1,3 +1,32 @@
 .movie-poster {
-    height: 100px;
+    height: 200px;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-container > h2 {
+    font-size: 2.5rem;
+}
+
+.ul-of-movies {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+.each-movie {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

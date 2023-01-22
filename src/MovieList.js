@@ -1,0 +1,5 @@
+// const Movie = ({movie}) => {
+//     return(
+
+//     );
+// }
